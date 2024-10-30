@@ -119,6 +119,8 @@ alias ll="lsd -lah"
 alias ls="lsd"
 alias la="lsd -a"
 
+# cat
+alias cat="bat"
 # FISH config edit and refresh
 alias fc="sudo nano ~/.config/fish/config.fish"
 alias fr="source ~/.config/fish/config.fish"
