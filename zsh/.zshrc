@@ -214,3 +214,11 @@ alias installstarship="curl -sS https://starship.rs/install.sh | sh"
 PATH=~/.console-ninja/.bin:$PATH
 alias ls="exa"
 alias la="exa --long --all --group"
+
+# pnpm
+export PNPM_HOME="/home/alotfy/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
