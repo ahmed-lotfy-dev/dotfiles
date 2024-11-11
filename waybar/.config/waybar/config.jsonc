@@ -58,7 +58,7 @@
     "format": "  {:%H:%M}",
   },
   "clock": {
-    "format": "  {:L%a %d %b}",
+    "format": "  {:L%I:%M %p}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
   },
   "cpu": {
