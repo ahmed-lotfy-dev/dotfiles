@@ -13,5 +13,16 @@ return { -- You can easily change to a different colorscheme.
 
 		-- You can configure highlights by doing something like:
 		vim.cmd.hi("Comment gui=none")
+
+		-- Toggle background transparency
+		local bg_transparent = true
+
+		local toggle_transparency = function()
+			bg_transparent = not bg_transparent
+			vim.g.nord_disable_background = bg_transparent
+			vim.cmd([[colorscheme tokyonight-night]])
+		end
+
+		vim.keymap.set("n", "<leader>bg", toggle_transparency, { noremap = true, silent = true })
 	end,
 }
