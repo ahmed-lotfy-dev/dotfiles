@@ -14,7 +14,7 @@
     "memory",
     "network",
     "pulseaudio",
-    "clock",
+//    "clock",
     "clock#simpleclock",
     "tray",
     "custom/power",
@@ -55,7 +55,7 @@
   },
   "clock#simpleclock": {
     "tooltip": false,
-    "format": "  {:%H:%M}",
+    "format": "  {:%I:%M %p}",
   },
   "clock": {
     "format": "  {:L%I:%M %p}",
